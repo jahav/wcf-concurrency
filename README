@@ -1,0 +1,12 @@
+A project to test limits of calling a service many many times at once using async/await.
+
+The project stems from this problem:
+I need to call a service several thousands times at once to calculate something, basically a batch. It is not possible to modify the service contract, although it is possible to increase the calls per second.
+
+Now I either use>
+* Message Queue to call the service 
+* Synchronous service (SOAP)
+
+The MQ is obviously superior way, however I can either choose MQ or synchronous service and I need to to call the service during some requests and MQ is quite a pain in the ass to use for getting an answer during request.
+
+In the end, I will probably choose MQ, but it is nice to check how WCF handles a large load of requests at once.
