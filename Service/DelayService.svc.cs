@@ -6,7 +6,7 @@ namespace Service
     [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple, InstanceContextMode =InstanceContextMode.Single)]
     public class CalculatorService : IDelayService
     {
-        public async Task<int> Delay(int value)
+        public async Task<int> DelayAsync(int value)
         {
             await Task.Delay(5000);
             return value;

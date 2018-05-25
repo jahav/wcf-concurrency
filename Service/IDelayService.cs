@@ -14,6 +14,6 @@ namespace Service
     public interface IDelayService
     {
         [OperationContract]
-        Task<int> Delay(int value);
+        Task<int> DelayAsync(int value);
     }
 }
