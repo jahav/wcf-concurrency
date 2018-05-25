@@ -1,4 +1,6 @@
-﻿using System.ServiceModel;
+﻿using Api;
+using System;
+using System.ServiceModel;
 using System.Threading.Tasks;
 
 namespace Service
@@ -9,7 +11,7 @@ namespace Service
         public async Task<int> DelayAsync(int value)
         {
             await Task.Delay(5000);
-            return value;
+            return value + 1;
         }
     }
 }

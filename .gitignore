@@ -5,3 +5,8 @@
 /.vs
 /Service/obj/Debug
 /Service/bin
+/Api/bin/Debug/netstandard2.0
+/Api/obj/Debug/netstandard2.0
+/Api/obj
+/Client/bin/Debug
+/Client/obj/Debug

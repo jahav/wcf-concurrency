@@ -68,7 +68,6 @@
     <Compile Include="DelayService.svc.cs">
       <DependentUpon>DelayService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IDelayService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +80,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Api\Api.csproj">
+      <Project>{aaf9cee4-5bdc-4e11-bdcf-6252745c791b}</Project>
+      <Name>Api</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
